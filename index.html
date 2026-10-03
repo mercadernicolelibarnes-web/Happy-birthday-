@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#315c43" />
+  <title>For You 🌿 | Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="leaf leaf-1">🍃</div>
+  <div class="leaf leaf-2">🌿</div>
+  <div class="leaf leaf-3">🍀</div>
+  <div class="leaf leaf-4">🌱</div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">a little birthday surprise 🌿</div>
+      <h1>For the Birthday Boy 🤎</h1>
+      <p class="hint">Click the envelope to open your message.</p>
+
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter">
+            <div class="letter-content">
+              <span class="tiny-title">a letter for you ♡</span>
+              <h2>Happy Birthday! 🎂</h2>
+
+              <p>
+                Happy birthdayyy! 🥳🌿 I hope today reminds you how loved,
+                appreciated, and special you are. Honestly, I’m really thankful
+                na dumating ka sa buhay ko. From all the random moments,
+                corny jokes, kalokohan, small talks, and even those moments
+                na wala naman tayong ginagawa pero somehow masaya pa rin,
+                ang dami nating memories na worth keeping.
+              </p>
+
+              <p>
+                I know hindi ko naman laging nasasabi, pero I genuinely
+                appreciate you. Thank you for being someone na pwede kong
+                kausapin, kulitin, tawanan, at makasama kahit simple lang
+                yung ginagawa natin. You make ordinary days feel a little
+                more fun, and somehow, kahit minsan nakakainis ka rin,
+                okay lang... konti lang. HAHAHA 😭
+              </p>
+
+              <p>
+                On your birthday, I hope you get the kind of happiness na
+                hindi kailangan pilitin. Sana ma-achieve mo lahat ng goals
+                mo, kahit paunti-unti. Keep believing in yourself, keep
+                growing, and don't forget to rest kapag pagod ka na.
+                Hindi naman kailangang ma-figure out lahat agad.
+                One step at a time lang. 🌱
+              </p>
+
+              <p>
+                Sana this new chapter brings you more genuine people,
+                peaceful days, unforgettable memories, and opportunities
+                na deserve mo. Kapag may stressful days, sana maalala mong
+                kaya mong lampasan 'yon. And kapag may good days naman,
+                please enjoy them fully. You deserve moments na mapapangiti
+                ka nang totoo.
+              </p>
+
+              <p>
+                Most importantly, stay true to yourself. Huwag mong baguhin
+                yung sarili mo just to fit in. The people who truly care
+                about you will appreciate you for who you are. So keep being
+                you — weird, funny, makulit, dramatic minsan, and everything
+                in between. 😂🤎
+              </p>
+
+              <p>
+                Thank you for all the memories we already have, and hopefully
+                marami pa tayong gagawing memories together. More gala,
+                more pictures, more random conversations, more tawanan,
+                and syempre more kalokohan. 📸🍃
+              </p>
+
+              <p class="final-note">
+                Happy birthday ulit! 🎂🤎 I wish you nothing but good things
+                in this new chapter. Take care of yourself, enjoy your day,
+                eat something masarap, and don't forget to smile.
+                You deserve to be celebrated today and always.
+                <br><br>
+                <strong>Happy Birthday, birthday boy! 🌿✨</strong>
+              </p>
+
+              <div class="signature">— from someone who is really glad to know you ♡</div>
+            </div>
+          </div>
+
+          <div class="envelope-front"></div>
+          <div class="flap"></div>
+
+          <div class="seal">
+            <span>♡</span>
+          </div>
+        </div>
+
+        <button class="open-btn" id="openBtn" type="button">
+          <span>OPEN ME</span>
+          <small>♡ tap here ♡</small>
+        </button>
+      </div>
+
+      <div class="music-status" id="musicStatus">🎵 your birthday song is ready</div>
+    </section>
+
+    <section class="memory-section">
+      <div class="section-heading">
+        <span>little memories</span>
+        <h2>Our cute little moments 📷</h2>
+        <p>Five photos, one tiny collection of memories. 🌱</p>
+      </div>
+
+      <div class="collage">
+        <figure class="photo photo-main">
+          <img src="assets/image1.jpg" alt="Memory 1" />
+          <figcaption>memory no. 01 ♡</figcaption>
+        </figure>
+
+        <figure class="photo photo-two">
+          <img src="assets/image2.jpg" alt="Memory 2" />
+          <figcaption>memory no. 02 🌿</figcaption>
+        </figure>
+
+        <figure class="photo photo-three">
+          <img src="assets/image3.jpeg" alt="Memory 3" />
+          <figcaption>memory no. 03</figcaption>
+        </figure>
+
+        <figure class="photo photo-four">
+          <img src="assets/image4.jpeg" alt="Memory 4" />
+          <figcaption>memory no. 04 🍃</figcaption>
+        </figure>
+
+        <figure class="photo photo-five">
+          <img src="assets/image5.jpeg" alt="Memory 5" />
+          <figcaption>memory no. 05 ♡</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      made with lots of love, green vibes & a little bit of kalokohan 🌿🤎
+    </footer>
+  </main>
+
+  <audio id="birthdayAudio" src="assets/audio1.mp3" loop preload="auto"></audio>
+
+  <script>
+    const envelope = document.getElementById("envelope");
+    const wrap = document.getElementById("envelopeWrap");
+    const button = document.getElementById("openBtn");
+    const audio = document.getElementById("birthdayAudio");
+    const status = document.getElementById("musicStatus");
+
+    button.addEventListener("click", async () => {
+      const isOpen = wrap.classList.toggle("opened");
+      envelope.classList.toggle("opened", isOpen);
+
+      if (isOpen) {
+        try {
+          audio.volume = 0.55;
+          await audio.play();
+          status.textContent = "🎵 music playing... enjoy your little surprise ♡";
+        } catch (error) {
+          status.textContent = "🎵 Tap the music button/browser permission if the song doesn't start.";
+        }
+        button.querySelector("span").textContent = "CLOSE";
+        button.querySelector("small").textContent = "♡ tap again ♡";
+      } else {
+        audio.pause();
+        button.querySelector("span").textContent = "OPEN ME";
+        button.querySelector("small").textContent = "♡ tap here ♡";
+        status.textContent = "🎵 your birthday song is ready";
+      }
+    });
+  </script>
+</body>
+</html>
