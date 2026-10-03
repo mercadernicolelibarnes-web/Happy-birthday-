@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#315c43" />
-  <title>For You 🌿 | Birthday Surprise</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🌿🤎</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="leaf leaf-1">🍃</div>
-  <div class="leaf leaf-2">🌿</div>
-  <div class="leaf leaf-3">🍀</div>
-  <div class="leaf leaf-4">🌱</div>
 
-  <main class="page">
+  <input type="checkbox" id="open-envelope">
+
+  <div class="background-leaf leaf-one">🍃</div>
+  <div class="background-leaf leaf-two">🌿</div>
+  <div class="background-leaf leaf-three">🌱</div>
+
+  <main>
     <section class="hero">
-      <div class="eyebrow">a little birthday surprise 🌿</div>
-      <h1>For the Birthday Boy 🤎</h1>
-      <p class="hint">Click the envelope to open your message.</p>
+      <p class="mini-title">A LITTLE BIRTHDAY SURPRISE</p>
+      <h1>Happy Birthday! 🎂</h1>
+      <p class="subtitle">Click the envelope to open your message ♡</p>
 
-      <div class="envelope-wrap" id="envelopeWrap">
-        <div class="envelope" id="envelope">
+      <label class="envelope-area" for="open-envelope">
+        <div class="envelope">
           <div class="envelope-back"></div>
-          <div class="letter">
-            <div class="letter-content">
-              <span class="tiny-title">a letter for you ♡</span>
-              <h2>Happy Birthday! 🎂</h2>
+
+          <article class="letter">
+            <div class="letter-inside">
+              <span class="letter-label">a little letter for you 🌿</span>
+              <h2>Happy Birthday, Birthday Boy! 🤎</h2>
 
               <p>
                 Happy birthdayyy! 🥳🌿 I hope today reminds you how loved,
-                appreciated, and special you are. Honestly, I’m really thankful
+                appreciated, and special you are. Honestly, I'm really thankful
                 na dumating ka sa buhay ko. From all the random moments,
                 corny jokes, kalokohan, small talks, and even those moments
                 na wala naman tayong ginagawa pero somehow masaya pa rin,
@@ -65,11 +66,10 @@
               </p>
 
               <p>
-                Most importantly, stay true to yourself. Huwag mong baguhin
-                yung sarili mo just to fit in. The people who truly care
-                about you will appreciate you for who you are. So keep being
-                you — weird, funny, makulit, dramatic minsan, and everything
-                in between. 😂🤎
+                Sana huwag mong kalimutan na okay lang maging ikaw.
+                Weird, funny, makulit, dramatic minsan, at lahat ng
+                nasa pagitan. 😂🤎 The people who truly care about you
+                will appreciate you for who you are.
               </p>
 
               <p>
@@ -79,106 +79,83 @@
                 and syempre more kalokohan. 📸🍃
               </p>
 
-              <p class="final-note">
-                Happy birthday ulit! 🎂🤎 I wish you nothing but good things
-                in this new chapter. Take care of yourself, enjoy your day,
-                eat something masarap, and don't forget to smile.
-                You deserve to be celebrated today and always.
-                <br><br>
-                <strong>Happy Birthday, birthday boy! 🌿✨</strong>
+              <p>
+                I hope this year gives you more reasons to smile, more
+                opportunities to grow, and more moments that you'll remember
+                for a long time. Whatever happens, take things one day at a
+                time and always take care of yourself.
               </p>
 
-              <div class="signature">— from someone who is really glad to know you ♡</div>
+              <div class="ending">
+                Happy birthday ulit! 🎂🤎 Enjoy your day, eat something
+                masarap, laugh as much as you can, and make more happy
+                memories. You deserve to be celebrated today and always.
+                <br><br>
+                <strong>Happy Birthday! 🌿✨</strong>
+              </div>
+
+              <p class="signature">— from someone who's really glad to know you ♡</p>
             </div>
-          </div>
+          </article>
 
           <div class="envelope-front"></div>
           <div class="flap"></div>
-
-          <div class="seal">
-            <span>♡</span>
-          </div>
+          <div class="seal">♡</div>
         </div>
 
-        <button class="open-btn" id="openBtn" type="button">
-          <span>OPEN ME</span>
-          <small>♡ tap here ♡</small>
-        </button>
-      </div>
+        <span class="open-text">
+          <strong>OPEN ME</strong>
+          <small>♡ tap the envelope ♡</small>
+        </span>
+      </label>
 
-      <div class="music-status" id="musicStatus">🎵 your birthday song is ready</div>
+      <div class="music-box">
+        <p>🎵 Birthday Music</p>
+        <audio controls autoplay loop>
+          <source src="audio1.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+        <small>If your browser blocks autoplay, press ▶ once.</small>
+      </div>
     </section>
 
-    <section class="memory-section">
-      <div class="section-heading">
+    <section class="memories">
+      <div class="heading">
         <span>little memories</span>
         <h2>Our cute little moments 📷</h2>
         <p>Five photos, one tiny collection of memories. 🌱</p>
       </div>
 
       <div class="collage">
-        <figure class="photo photo-main">
-          <img src="assets/image1.jpg" alt="Memory 1" />
-          <figcaption>memory no. 01 ♡</figcaption>
+        <figure class="photo big">
+          <img src="image1.jpg" alt="muhkang ewan">
+          <figcaption>♡</figcaption>
         </figure>
 
-        <figure class="photo photo-two">
-          <img src="assets/image2.jpg" alt="Memory 2" />
-          <figcaption>memory no. 02 🌿</figcaption>
+        <figure class="photo">
+          <img src="image2.jpg" alt="sino ka?">
+          <figcaption>🌿</figcaption>
         </figure>
 
-        <figure class="photo photo-three">
-          <img src="assets/image3.jpeg" alt="Memory 3" />
-          <figcaption>memory no. 03</figcaption>
+        <figure class="photo">
+          <img src="image3.jpeg" alt="ah talaga ba?">
+          <figcaption>(⁠〃ﾟ⁠3ﾟ⁠〃⁠)</figcaption>
         </figure>
 
-        <figure class="photo photo-four">
-          <img src="assets/image4.jpeg" alt="Memory 4" />
-          <figcaption>memory no. 04 🍃</figcaption>
+        <figure class="photo">
+          <img src="image4.jpeg" alt="Memory 4">
+          <figcaption>🍃</figcaption>
         </figure>
 
-        <figure class="photo photo-five">
-          <img src="assets/image5.jpeg" alt="Memory 5" />
-          <figcaption>memory no. 05 ♡</figcaption>
+        <figure class="photo">
+          <img src="image5.jpeg" alt="💚💚">
+          <figcaption>labya♡</figcaption>
         </figure>
       </div>
     </section>
 
-    <footer>
-      made with lots of love, green vibes & a little bit of kalokohan 🌿🤎
-    </footer>
+    <footer>made with loves & a little bit of kalokohan 🌿🤎</footer>
   </main>
 
-  <audio id="birthdayAudio" src="assets/audio1.mp3" loop preload="auto"></audio>
-
-  <script>
-    const envelope = document.getElementById("envelope");
-    const wrap = document.getElementById("envelopeWrap");
-    const button = document.getElementById("openBtn");
-    const audio = document.getElementById("birthdayAudio");
-    const status = document.getElementById("musicStatus");
-
-    button.addEventListener("click", async () => {
-      const isOpen = wrap.classList.toggle("opened");
-      envelope.classList.toggle("opened", isOpen);
-
-      if (isOpen) {
-        try {
-          audio.volume = 0.55;
-          await audio.play();
-          status.textContent = "🎵 music playing... enjoy your little surprise ♡";
-        } catch (error) {
-          status.textContent = "🎵 Tap the music button/browser permission if the song doesn't start.";
-        }
-        button.querySelector("span").textContent = "CLOSE";
-        button.querySelector("small").textContent = "♡ tap again ♡";
-      } else {
-        audio.pause();
-        button.querySelector("span").textContent = "OPEN ME";
-        button.querySelector("small").textContent = "♡ tap here ♡";
-        status.textContent = "🎵 your birthday song is ready";
-      }
-    });
-  </script>
 </body>
 </html>
